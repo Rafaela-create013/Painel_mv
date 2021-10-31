@@ -1,9 +1,12 @@
 <?php
 // Configurações do banco de dados
-$servidor = "localhost";
-$usuario_bd = "root";
-$senha_bd = "usbw";
-$banco = "painelMV";
+$serve = "localhost";
+$user = "root";
+$password = "usbw";
+$database = "painelMV";
 
-$con = new mysqli($servidor, $usuario_bd, $senha_bd, $banco);
+mysql_connect( $serve, $user, $password, $database ) or die( ' Erro na conexão ' ); 
+if (mysql_connect != null){
+    mysql_select_db( $database ) or die( 'Erro na seleção do banco' );
+}
 ?>
