@@ -7,23 +7,40 @@
     <title>Painel de internados</title>
 </head>
 <body>
-    <select>
-        <option value="1A">1A - Internação Cardiologia</option>
-        <option value="2B">2B - Internação Pediatria</option>
-        <option value="3H">3H - Internação Covid</option>
-        <option value="4C">4C - Internação UTI Geral</option>
-    </select>
-    <table>
-        <tr>
-            <th>Setor de internação</th>
-            <th>Atendimentos</th>
-            <th>Leito</th>
-        </tr>
-        <tr>
-            <td>Set setor</td>
-            <td>Set atendimento</td>
-            <td>Set Leito</td>
-        </tr>
-    </table>
+    <style>
+            table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    td, th {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      border: 1px solid #20B2AA;
+      text-align: left;
+      padding: 8px;
+      font-size: 14px;
+    }
+    </style>
+    <form method="post" action="painel.php">
+        <select>
+            <option value="1A">1A - Internação Cardiologia</option>
+            <option value="2B">2B - Internação Pediatria</option>
+            <option value="3H">3H - Internação Covid</option>
+            <option value="4C">4C - Internação UTI Geral</option>
+        </select>
+        <hr>
+        <table>
+            <tr>
+                <th>Setor de internação</th>
+                <th>Atendimentos</th>
+                <th>Leito</th>
+            </tr>
+            <tr>
+                <td>Set setor</td>
+                <td>Set atendimento</td>
+                <td>Set Leito</td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
