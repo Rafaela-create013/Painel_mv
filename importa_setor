@@ -1,0 +1,19 @@
+<?php
+$servidor = "localhost";
+$usuario_bd = "root";
+$senha_bd = "";
+$banco = "teste";
+
+$connect = new mysqli($servidor, $usuario_bd, $senha_bd, $banco);
+
+$nome = $_POST['nome'];
+
+    if($connect != null){
+        echo "Sem erros de acesso ao banco!";
+        $comandoSQL = ("SELECT $nome FROM tb_usuario");
+        $res = $connect->query($comandoSQL);
+    }
+    else{
+        echo "Erro de acesso ao banco de dados [0001]";
+    }
+?>
