@@ -1,5 +1,5 @@
 *{
-  margin: 0.1%;
+  margin: 0%;
   background-color: #f0f0f0;
 }
 ul {
@@ -9,7 +9,7 @@ ul {
   overflow: hidden;
   background-color: #ECECEC;
   color: #383838;
-  border-bottom: 5px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
   height: 40px;
 }
 li{
@@ -36,14 +36,17 @@ table {
     text-align: left;
     padding: 8px;
     font-size: 14px;
+
   }
   th{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       text-align: left;
         padding: 8px;
         font-size: 14px;
-      color: #FFF;
-      background-color: #0E78AD;
+        font-weight: lighter;
+        border-top:  1px solid #DCDCDC;
+        border-bottom: 1px solid #DCDCDC;
+      background-color:  #ECECEC;
   }
 
 p{
